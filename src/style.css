@@ -65,6 +65,30 @@ header {position: fixed; width: 100%;}
   cursor: pointer;
 }
 
+#header-nav-button-dropdown{
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+  transition: all 0.7s;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-wrapper nav{
+  position: absolute;
+  padding: .25rem 3rem .25rem 1.5rem;
+  display: none;
+}
+
+.dropdown-wrapper nav .dropdown-link{
+  padding: 0.75rem 0;
+  color: #788896;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .header-nav-button.grey{
   font-weight: 400;
   color: #4b5c6b;
