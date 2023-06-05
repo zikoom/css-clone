@@ -1,0 +1,27 @@
+h1{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.headingl-bold-2{
+  color: #222e3a;
+  margin-top: 0;
+  font-family: Plus Jakarta Sans,sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.bodym-regular-2{
+  font-family: Inter,sans-serif;
+}
+
+.bottom-margin-medium{
+  color: #4b5c6b;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
