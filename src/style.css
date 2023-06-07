@@ -158,20 +158,46 @@ header {position: fixed; width: 100%; z-index: 2;}
 .section-01-wrapper{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
-  max-width: 500px;
 }
-.section-01-wrapper .section-01-title{
+.section-01-title-wrapper{
+  font-size: 1.5rem;
   text-align: center;
 }
 
-.section-01-banner-item{
-
+.section-01-title-wrapper .text{
+  margin-bottom: 2em;
 }
 
+.section-01-banner-wrapper {
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.section-01-banner-item{
+  border: 1px black solid;
+  width: 230px;
+  height: 140px;
+  margin: 6px;
+  background-image: url('./img/random-logo_01_240x120.png');
+}
 
-
+.section-01-footer-wrapper{
+}
+.section-01-footer-link-wrapper{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.section-01-footer-link-item{color: #fff; margin: 0;}
+.section-01-footer-link-item.icon{
+  width: 1rem;
+  margin-left: 0.5rem;
+}
