@@ -34,3 +34,20 @@ if(headerDropdownItem && headerDropdownWrapper && headerDropdownNav) {
     }
   })
 }
+
+
+/**
+ * header opacity 변경을 위한 body scroll event
+ */
+// document.addEventListener('scroll', () => {
+//   const headerWrapper = document.querySelector('.header-wrapper');
+//   console.log('scroll event in. headerWrapper document.body.scrollTo: ', headerWrapper, document.body.scrollTop);
+//   if(!headerWrapper) return;
+
+//   if(document.scrollTop === 0){
+//     headerWrapper.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+//   } else {
+//     headerWrapper.style.backgroundColor = 'rgba(255, 255, 255, 100)';
+//   }
+
+// })
