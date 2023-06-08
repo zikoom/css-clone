@@ -1,6 +1,9 @@
 @import './reset.css';
 @import './common.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Plus+Jakarta+Sans&display=swap');
+
 html{height: 100%;}
 header {position: fixed; width: 100%; z-index: 2;}
 
@@ -193,8 +196,6 @@ header {position: fixed; width: 100%; z-index: 2;}
   background-image: url('./img/random-logo_01_240x120.png');
 }
 
-.section-01-footer-wrapper{
-}
 .section-01-footer-link-wrapper{
   display: flex;
   justify-content: center;
@@ -205,4 +206,182 @@ header {position: fixed; width: 100%; z-index: 2;}
 .section-01-footer-link-item.icon{
   width: 1rem;
   margin-left: 0.5rem;
+}
+
+.section-02{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+
+
+.section-02-content-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.section-02-title{
+  font-size: 4rem;
+  font-weight: 550;
+  margin-bottom: 2rem;
+}
+
+.section-02-sub-title{
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  color: #4b5c6b;
+}
+
+.section-02-container{
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.section-02-card-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.section-02-card{
+  display: flex;
+  margin: 8px;
+  width: 215px;
+  height: 267px;
+  border: 1px solid black;
+}
+
+
+.section-02-mindmap-button-wrapper{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.section-02-mindmap-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 908px;
+  height: 60px;
+  background-color: #bd34d1;
+  color: #fff;
+
+  border-radius: 1rem;
+}
+
+.section-02-mindmap-button-text-block{
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 24px;
+}
+
+.section-02-try-button{
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  color: #fff;
+  background-color: #8313dd;
+  border-radius: 12.5rem;
+  text-decoration: none;
+}
+
+.section-02-try-button:visited{
+  color: #fff;
+}
+
+.section-02-try-button:hover{
+  color: #fff;
+}
+
+.section-02-try-button:link{
+  color: #fff;
+}
+
+.section-03{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.section-03-wrapper{
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.section-03-title-text{
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.section-03-subtitle-text{
+  font-family: Inter, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  color: #4b5c6b;
+}
+
+.section-03-title-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.section-03-title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+}
+
+.section-03-grid-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.section-03-grid-item-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-03-grid-item-text{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0.625rem 0.5rem 0.25rem 0.5rem;
+  font-family: Inter, sans-serif;
+}
+
+
+.section-03-title-link-button{
+  color: #fff;
+  background-color: #8313dd;
+  border-radius: 12.5rem;
+  padding: 1rem 2rem;
+  font-family: Inter,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s,background-color .3s;
+  display: flex;
+  box-shadow: 0 1px 4px rgba(10,10,10,.12);
+}
+.section-03-title-link-button:hover{
+  color: #fff;
+}
+.section-03-title-link-button:link{
+  color: #fff;
 }
