@@ -121,6 +121,11 @@ body {
   .section-02-border-container {
     border: 1px solid #faefdd;
 
+    .section-02-container.lastsection {
+      max-width: $maxWidth;
+      width: 50%;
+    }
+
     .section-02-container {
 
       max-width: $maxWidth;
@@ -150,16 +155,18 @@ body {
 
         }
 
-        .section-02-info-text {
-          margin-top: 2rem;
-          margin-bottom: 1rem;
-          color: white;
-        }
+
       }
 
       .section-02-footer {
         margin: 0 auto;
         width: 50%;
+        color: white;
+      }
+
+      .section-02-info-text {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
         color: white;
       }
     }

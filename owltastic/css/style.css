@@ -418,6 +418,10 @@ body {
 .section-02-wrapper .section-02-border-container {
   border: 1px solid #faefdd;
 }
+.section-02-wrapper .section-02-border-container .section-02-container.lastsection {
+  max-width: 1416px;
+  width: 50%;
+}
 .section-02-wrapper .section-02-border-container .section-02-container {
   max-width: 1416px;
   margin: 0 auto;
@@ -443,14 +447,14 @@ body {
   border: 1px solid #faefdd;
   margin-bottom: 32px;
 }
-.section-02-wrapper .section-02-border-container .section-02-container .section-02-content-container .section-02-info-text {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: white;
-}
 .section-02-wrapper .section-02-border-container .section-02-container .section-02-footer {
   margin: 0 auto;
   width: 50%;
+  color: white;
+}
+.section-02-wrapper .section-02-border-container .section-02-container .section-02-info-text {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   color: white;
 }
 
