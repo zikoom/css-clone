@@ -496,4 +496,27 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 1100px) {
+  .section-02-wrapper .section-02-border-container .section-02-container {
+    padding: 64px 40px;
+  }
+  .section-02-wrapper .section-02-border-container .section-02-container .section-02-title {
+    width: 75%;
+  }
+  .section-02-wrapper .section-02-border-container .section-02-container .section-02-footer {
+    width: 75%;
+  }
+}
+@media (max-width: 820px) {
+  .section-02-wrapper .section-02-border-container .section-02-container .section-02-content-container .section-02-flex-item-container {
+    width: 47%;
+  }
+}
+@media (max-width: 700px) {
+  .section-02-wrapper .section-02-border-container .section-02-container .section-02-content-container .section-02-flex-item-container {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
