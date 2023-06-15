@@ -320,6 +320,11 @@ p {
   font-size: 14px;
 }
 
+button {
+  background-color: transparent;
+  border: 0;
+}
+
 .fake-content {
   background-color: azure;
   width: 100%;
@@ -355,6 +360,10 @@ p {
   height: 24px;
   margin-left: -6px;
   margin-right: 6px;
+}
+
+.icon-box.no-left-margin {
+  margin: 0 6px;
 }
 
 .km-layout {
@@ -463,13 +472,15 @@ p {
   margin: 0 auto;
 }
 .km-layout .km-content-container .km-song-container .song-wrapper {
-  display: flex;
-  align-items: center;
+  width: 100%;
 }
 .km-layout .km-content-container .km-song-container .song-wrapper .song {
   display: flex;
+  margin-bottom: 5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 0;
   align-items: center;
+  width: 100%;
 }
 .km-layout .km-content-container .km-song-container .song-wrapper .song .song-thumbnail {
   width: 32px;
@@ -484,6 +495,20 @@ p {
   font-family: sans-serif;
   color: white;
   font-weight: 550;
+  flex-grow: 5;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song .song-artist {
+  flex-grow: 3;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song .song-albumname {
+  flex-grow: 3;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song .song-button-wrapper {
+  flex-grow: 3;
+  display: flex;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song .song-time {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
