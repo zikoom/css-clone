@@ -458,5 +458,32 @@ p {
   background: transparent;
   color: #fff;
 }
+.km-layout .km-content-container .km-song-container {
+  width: 85vh;
+  margin: 0 auto;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper {
+  display: flex;
+  align-items: center;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song .song-thumbnail {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song .song-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.km-layout .km-content-container .km-song-container .song-wrapper .song .song-title {
+  font-family: sans-serif;
+  color: white;
+  font-weight: 550;
+}
 
 /*# sourceMappingURL=style.css.map */
