@@ -323,14 +323,9 @@ p {
 button {
   background-color: transparent;
   border: 0;
+  padding: 0;
 }
 
-@media (max-width: 615px) {
-  html {
-    height: 50px;
-    --custom-value: 40px;
-  }
-}
 .fake-content {
   background-color: azure;
   width: 100%;
@@ -351,6 +346,10 @@ button {
   color: #b3b3b3;
 }
 
+.formatted-string.small {
+  font-size: 0.75rem;
+}
+
 .radius-button-wrapper {
   display: flex;
   align-items: center;
@@ -362,14 +361,23 @@ button {
 }
 
 .icon-box {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   margin-left: -6px;
   margin-right: 6px;
+  padding: 8px;
+}
+
+.icon-box-medium {
+  width: 48px;
+  height: 48px;
+  margin-left: -6px;
+  margin-right: 6px;
+  padding: 8px;
 }
 
 .icon-box.no-left-margin {
-  margin: 0 6px;
+  margin: 0 6px 0 0;
 }
 
 .km-layout {
@@ -420,6 +428,7 @@ button {
 }
 .km-layout .km-content-container {
   padding-top: 64px;
+  padding-bottom: 72px;
   width: 100%;
   height: 100%;
 }
@@ -427,7 +436,7 @@ button {
   padding-bottom: 24px;
 }
 .km-layout .km-content-container .km-detail-header-wrapper .km-detail-header-container {
-  width: 85vh;
+  width: 1150px;
   margin: 24px auto 0 auto;
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -474,8 +483,8 @@ button {
   color: #fff;
 }
 .km-layout .km-content-container .km-song-container {
-  width: 85vh;
-  margin: 0 auto;
+  width: 1150px;
+  margin: 0 auto 72px auto;
 }
 .km-layout .km-content-container .km-song-container .song-wrapper {
   width: 100%;
@@ -520,10 +529,72 @@ button {
   position: fixed;
   width: 100vw;
   height: 72px;
-  background-color: purple;
+  background-color: #212121;
   z-index: 3;
   bottom: 0;
   left: 0;
+}
+.km-layout .km-footer-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-play-box {
+  width: 292px;
+  display: flex;
+  align-items: center;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-play-box .left-control-box {
+  display: flex;
+  align-items: center;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-play-box .left-control-box .left-control-item {
+  box-sizing: content-box;
+  padding: 8px;
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-play-box .left-control-box .left-control-item.medium {
+  width: 40px;
+  height: 40px;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-play-box .left-control-box .left-playtime-box {
+  margin: 0 10px;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-song-box {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-song-box .footer-thumbnail {
+  width: 40px;
+  height: 40px;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-song-box .footer-thumbnail img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-song-box .footer-song-info-box {
+  margin: 0 16px;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-song-box .footer-song-info-box .song-title {
+  color: #fff;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 500;
+  flex-grow: 5;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-song-box .footer-middle-control-box {
+  display: flex;
+}
+.km-layout .km-footer-wrapper .footer-container .footer-setting-box {
+  width: 292px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: end;
 }
 
 /*# sourceMappingURL=style.css.map */
