@@ -1,5 +1,5 @@
 @mixin screen-small {
-  @media ( max-width: 615px){
+  @media ( max-width: 935px){
     @content
   }
 };

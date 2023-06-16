@@ -11,6 +11,7 @@ $headerFontSize: 20px;
 //content common
 
 $contentWidth: 1150px;
+$contentWidth-M: calc(100vw - 17px - 112px);
 
 
 //footer
@@ -20,3 +21,4 @@ $footerBackGroundColor: #212121;
 $footerHeight: 72px;
 
 $footer-play-box-width: 292px;
+$footer-play-box-width-M: 144px;

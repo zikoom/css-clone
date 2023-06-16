@@ -3,6 +3,10 @@
 @import './screen.scss';
 
 
+.hide-m{
+  display: block;
+}
+
 .fake-content {
   background-color: azure;
   width: 100%;
@@ -58,7 +62,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: calc(100vw - 17px);
     height: $headerHeight;
 
     padding: 8px 16px;
@@ -113,7 +117,7 @@
     padding-top: $headerHeight;
     padding-bottom:  $footerHeight;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 
     .km-detail-header-wrapper {
       padding-bottom: 24px;
@@ -200,9 +204,11 @@
           align-items: center;
           width: 100%;
 
+
           .song-thumbnail{
             width: 32px;
             height: 32px;
+            flex-grow: 0;
 
             margin-right: 24px;
 
@@ -213,23 +219,36 @@
 
           }
 
-          .song-title {
-            font-family: sans-serif;
-            color: white;
-            font-weight: 550;
+          .song-info-wrapper {
+            flex: 11;
 
-            flex-grow:5;
+            display: flex;
+
+            .song-title {
+              font-family: sans-serif;
+              color: white;
+              font-weight: 550;
+
+              flex-grow:5;
+            }
+
+            .song-info-box{
+              display: flex;
+              flex-grow: 6;
+              .song-artist{
+                flex-grow:3;
+              }
+
+              .song-albumname {
+                flex-grow:3;
+              }
+            }
+
           }
 
-          .song-artist{
-            flex-grow:3;
-          }
-
-          .song-albumname {
-            flex-grow:3;
-          }
 
           .song-button-wrapper{
+
             flex-grow:3;
             display: flex;
           }
@@ -278,9 +297,9 @@
             height: 40px;
           }
 
-          .left-playtime-box {
-            margin: 0 10px;
-          }
+        }
+        .left-playtime-box {
+          margin: 0 10px;
         }
       }
 
@@ -333,3 +352,301 @@
 }
 
 
+
+
+@media (max-width: 935px) {
+  .km-layout{
+    .km-header-wrapper {
+      position: fixed;
+      width: calc(100vw - 17px);
+      height: $headerHeight;
+      padding: 8px 16px;
+
+      color: $headerFontColor;
+      font-size: $headerFontSize;
+      font-family: sans-serif;
+      font-weight: 500;
+
+      //헤더 로코 클래스
+      .km-header-logo {
+        width: 80px;
+        height: 24px;
+        background-image: url('https://img.freepik.com/free-vector/white-3d-editable-vector-text-effect_53876-110938.jpg?w=2000');
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;
+      }
+
+
+      //헤더 nav menu wrapper
+      .km-header-menu-wrapper {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+
+        .km-header-menu-item{
+          color: $headerFontColor;
+          fill: $headerFontColor;
+          margin: 0 22px;
+          cursor: pointer;
+        }
+
+        .km-header-menu-item:hover {
+          color: #fff;
+          fill: #fff;
+        }
+      }
+
+      .km-header-personal-btn {
+        img {
+          border-radius: 50%;
+          background-size: contain;
+        }
+      }
+
+    }
+
+    .km-content-container {
+      padding-top: $headerHeight;
+      padding-bottom:  $footerHeight;
+      width: 100%;
+      height: 100%;
+
+      .km-detail-header-wrapper {
+        padding-bottom: 24px;
+
+        .km-detail-header-container {
+          width: $contentWidth-M;
+          margin: 24px auto 0 auto;
+
+          display: grid;
+          grid-template-columns: 200px 1fr;
+          grid-column-gap: 36px;
+
+          grid-template-areas:
+          "detail-header-thumbnail detail-header-metadata"
+          "detail-header-thumbnail detail-header-metadata"
+          "detail-header-menu detail-header-menu";
+
+          .km-detail-header-thumbnail {
+            width: 200px;
+            height: 200px;
+
+            grid-area: detail-header-thumbnail;
+
+            img {
+              width: 100%;
+              height: 100%;
+              background-size: contain;
+            }
+          }
+
+          .km-detail-header-metadata {
+            grid-area: detail-header-metadata;
+
+            display: flex;
+            flex-direction: column;
+            // justify-content: end;
+            align-self: center;
+
+            .title {
+              font-family: sans-serif;
+              color: #fff;
+              font-weight: 600;
+              padding-bottom: 1rem;
+            }
+
+            .description {
+              margin-top: 0.875rem;
+            }
+          }
+          .km-detail-header-menu {
+            grid-area: detail-header-menu;
+
+            display: flex;
+            align-items: start;
+
+            .shuffle-btn{
+              background-color: #fff;
+              color: black;
+            }
+
+            .modify-btn{
+              border-color: #353535;
+              background: transparent;
+              color: #fff;
+            }
+
+
+          }
+        }
+      }
+
+      .km-song-container {
+        width: $contentWidth-M;
+
+        margin: 0 auto 72px auto;
+
+        .song-wrapper {
+          width: 100%;
+
+          .song {
+            height: 56px;
+            display: flex;
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 5px 0;
+            align-items: center;
+            width: 100%;
+
+            .song-thumbnail{
+              width: 32px;
+              height: 32px;
+
+              margin-right: 24px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+
+            }
+
+            .song-info-wrapper {
+              display: flex;
+              flex-direction: column;
+              .song-title {
+                font-family: sans-serif;
+                color: white;
+                font-weight: 550;
+
+                flex-grow:5;
+              }
+
+              .song-info-box{
+                display: flex;
+                .song-artist{
+                  flex: none;
+                }
+                .song-albumname {
+                  flex: none;
+                }
+
+                .song-albumname::before{
+                  content: "  • ";
+                }
+              }
+            }
+
+
+            .song-button-wrapper{
+              flex-grow:3;
+              display: flex;
+            }
+
+            .song-time{
+              flex-grow:1;
+            }
+          }
+        }
+      }
+    }
+
+    .km-footer-wrapper {
+      position: fixed;
+      width: 100vw;
+      height: $footerHeight;
+      background-color: $footerBackGroundColor;
+      z-index: 3;
+      bottom: 0;
+      left: 0;
+
+      .footer-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .footer-play-box {
+          width: $footer-play-box-width-M;
+          display: flex;
+          align-items: center;
+          .left-control-box {
+            display: flex;
+            align-items: center;
+
+            .left-control-item {
+              box-sizing: content-box;
+              padding: 8px;
+              margin-left: 8px;
+              width: 24px;
+              height: 24px;
+            }
+
+            .left-control-item.medium {
+              width: 40px;
+              height: 40px;
+            }
+
+
+          }
+          .left-playtime-box {
+            display: none;
+          }
+        }
+
+        .footer-song-box {
+          flex-grow: 1;
+
+          display: flex;
+          justify-content: center;
+
+          .footer-thumbnail {
+            display: none;
+            width: 40px;
+            height: 40px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+            }
+          }
+
+          .footer-song-info-box {
+            margin: 0 16px;
+
+            .song-title {
+              color: #fff;
+              font-family: sans-serif;
+              color: white;
+              font-weight: 500;
+
+              flex-grow:5;
+            }
+          }
+
+          .footer-middle-control-box {
+            display: flex;
+          }
+        }
+
+        .footer-setting-box {
+          width: $footer-play-box-width-M;
+          margin-right: 10px;
+          display: flex;
+          justify-content: end;
+        }
+      }
+
+
+
+    }
+  }
+
+  .hide-m {
+    display: none;
+  }
+}
