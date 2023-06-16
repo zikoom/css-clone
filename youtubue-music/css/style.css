@@ -325,6 +325,12 @@ button {
   border: 0;
 }
 
+@media (max-width: 615px) {
+  html {
+    height: 50px;
+    --custom-value: 40px;
+  }
+}
 .fake-content {
   background-color: azure;
   width: 100%;
@@ -368,7 +374,7 @@ button {
 
 .km-layout {
   background-color: #030303;
-  height: 100vh;
+  position: relative;
 }
 .km-layout .km-header-wrapper {
   position: fixed;
@@ -509,6 +515,15 @@ button {
 }
 .km-layout .km-content-container .km-song-container .song-wrapper .song .song-time {
   flex-grow: 1;
+}
+.km-layout .km-footer-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 72px;
+  background-color: purple;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

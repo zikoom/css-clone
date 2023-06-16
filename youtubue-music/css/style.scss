@@ -1,5 +1,15 @@
 @import './normalize.scss';
 @import './variable.scss';
+@import './screen.scss';
+
+@include screen-small {
+  html {
+    height: 50px;
+
+    --custom-value: 40px;
+    $footerHeight: 48px;
+  }
+}
 
 
 .fake-content {
@@ -42,7 +52,8 @@
 .km-layout{
 
   background-color: $backgroundColor;
-  height: 100vh;
+  // height: 100vh;
+  position: relative;
   .km-header-wrapper {
     position: fixed;
     background-color: $backgroundColor;
@@ -231,5 +242,16 @@
       }
     }
   }
+
+  .km-footer-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: $footerHeight;
+    background-color: purple;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+  }
 }
+
 
