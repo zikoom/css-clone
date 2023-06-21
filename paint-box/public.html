@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>paint-box clone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="header-left-container">
+        <div class="mobile-icon-wrapper">
+          <!-- 햄버거 메뉴 -->
+          <svg class="icon-mobile-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M4 16H28" stroke="#414141" stroke-miterlimit="10" stroke-linecap="square"></path>
+            <path d="M4 7H28" stroke="#414141" stroke-miterlimit="10" stroke-linecap="square"></path>
+            <path d="M4 25H28" stroke="#414141" stroke-miterlimit="10" stroke-linecap="square"></path>
+          </svg>
+        </div>
+        <div class="pc-icon-wrapper">
+          <svg class="icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M4.2,4h5.7c1.3,0,2,0.6,2,1.7c0,0.7-0.2,1.7-2.1,1.7H4.2V4z M4.2,10.4h6c2.9,0,4.9-1.9,4.9-4.8
+              c0-2.8-2-4.5-5.1-4.5H1.1v15.6h3.1V10.4z"></path>
+            <path d="M50.9,5.6L53,9.8h-4.2L50.9,5.6z M49.7,1l-7.7,15.6h3.4l1.9-3.9h7.1l1.9,3.9h3.4L52,1H49.7z"></path>
+            <rect x="90.9" y="0.9" width="3.1" height="15.8"></rect>
+            <polygon points="88.9,47.7 97.2,57.3 99.1,57.3 99.1,41.7 96,41.7 96,51.3 87.7,41.7 85.8,41.7 85.8,57.3
+              88.9,57.3 "></polygon>
+            <polygon points="84.9,83.1 84.9,86 90.9,86 90.9,98.7 94,98.7 94,86 100,86 100,83.1 "></polygon>
+            <path d="M10.5,54.4H3.6v-4.1h6.8c1.3,0,2,0.7,2,2C12.4,53.6,11.7,54.4,10.5,54.4 M9.8,47.4H3.6v-2.7h6.2
+              c1.4,0,1.7,0.5,1.7,1.4C11.5,46.6,11.3,47.4,9.8,47.4 M15.6,52.4c0-1.6-0.6-2.9-1.9-3.9c0.6-0.7,0.9-1.5,0.9-2.6
+              c0-1.6-0.6-4.2-4.9-4.2H0.5v15.6h9.6C13.5,57.3,15.6,55.4,15.6,52.4"></path>
+            <path d="M8.1,96.1c-2.9,0-4.9-2.2-4.9-5.2c0-3,2.1-5.2,4.9-5.2c2.9,0,4.9,2.2,4.9,5.2
+              C13,93.9,10.9,96.1,8.1,96.1 M8.1,82.8c-4.7,0-8.1,3.4-8.1,8.2c0,4.7,3.4,8.1,8.1,8.1c4.7,0,8.1-3.4,8.1-8.1
+              C16.1,86.2,12.8,82.8,8.1,82.8"></path>
+            <polygon points="55.3,83.1 51,88.5 46.6,83.1 42.7,83.1 49,90.9 42.6,98.7 46.4,98.7 50.9,93.2 55.4,98.7
+              59.3,98.7 52.9,90.8 59.2,83.1 "></polygon>
+            </svg>
+        </div>
+      </div>
+      <div class="header-middle-container">
+        <!-- logo icon svg -->
+        <div class="header-moible-middle-logo">
+          <svg class="icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M4.2,4h5.7c1.3,0,2,0.6,2,1.7c0,0.7-0.2,1.7-2.1,1.7H4.2V4z M4.2,10.4h6c2.9,0,4.9-1.9,4.9-4.8
+              c0-2.8-2-4.5-5.1-4.5H1.1v15.6h3.1V10.4z"></path>
+            <path d="M50.9,5.6L53,9.8h-4.2L50.9,5.6z M49.7,1l-7.7,15.6h3.4l1.9-3.9h7.1l1.9,3.9h3.4L52,1H49.7z"></path>
+            <rect x="90.9" y="0.9" width="3.1" height="15.8"></rect>
+            <polygon points="88.9,47.7 97.2,57.3 99.1,57.3 99.1,41.7 96,41.7 96,51.3 87.7,41.7 85.8,41.7 85.8,57.3
+              88.9,57.3 "></polygon>
+            <polygon points="84.9,83.1 84.9,86 90.9,86 90.9,98.7 94,98.7 94,86 100,86 100,83.1 "></polygon>
+            <path d="M10.5,54.4H3.6v-4.1h6.8c1.3,0,2,0.7,2,2C12.4,53.6,11.7,54.4,10.5,54.4 M9.8,47.4H3.6v-2.7h6.2
+              c1.4,0,1.7,0.5,1.7,1.4C11.5,46.6,11.3,47.4,9.8,47.4 M15.6,52.4c0-1.6-0.6-2.9-1.9-3.9c0.6-0.7,0.9-1.5,0.9-2.6
+              c0-1.6-0.6-4.2-4.9-4.2H0.5v15.6h9.6C13.5,57.3,15.6,55.4,15.6,52.4"></path>
+            <path d="M8.1,96.1c-2.9,0-4.9-2.2-4.9-5.2c0-3,2.1-5.2,4.9-5.2c2.9,0,4.9,2.2,4.9,5.2
+              C13,93.9,10.9,96.1,8.1,96.1 M8.1,82.8c-4.7,0-8.1,3.4-8.1,8.2c0,4.7,3.4,8.1,8.1,8.1c4.7,0,8.1-3.4,8.1-8.1
+              C16.1,86.2,12.8,82.8,8.1,82.8"></path>
+            <polygon points="55.3,83.1 51,88.5 46.6,83.1 42.7,83.1 49,90.9 42.6,98.7 46.4,98.7 50.9,93.2 55.4,98.7
+              59.3,98.7 52.9,90.8 59.2,83.1 "></polygon>
+            </svg>
+        </div>
+
+        <div class="header-middle-wrapper">
+          <nav class="header-pc-nav-container">
+            <a class="header-middle-button" href="javascript:void(null)">NAIL PLISH</a>
+            <a class="header-middle-button" href="javascript:void(null)">NAIL CARE</a>
+            <a class="header-middle-button" href="javascript:void(null)">NAIL ART KITS</a>
+            <a class="header-middle-button" href="javascript:void(null)">JOURNAL</a>
+          </nav>
+          <a class="book-button">Book Button</a>
+        </div>
+      </div>
+      <div class="header-right-container">
+        <a class="header-right-button" href="javascript:void(null)">
+          <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M13.5001 13.5001L9.37646 9.37646" stroke="#414141" stroke-miterlimit="10" stroke-linecap="square"></path>
+            <path d="M5.7 10.9C8.57188 10.9 10.9 8.57188 10.9 5.7C10.9 2.82812 8.57188 0.5 5.7 0.5C2.82812 0.5 0.5 2.82812 0.5 5.7C0.5 8.57188 2.82812 10.9 5.7 10.9Z" stroke="#414141" stroke-miterlimit="10" stroke-linecap="square"></path>
+          </svg>
+        </a>
+        <a class="header-right-button" href="javascript:void(null)">
+          <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="12" height="17" viewBox="0 0 12 17" fill="none">
+            <path d="M11.25 16.3334H0.75V5.33337H11.25V16.3334Z" stroke="#414141" stroke-miterlimit="10" stroke-linecap="square"></path>
+            <path d="M3.33337 7.33333V3.66667C3.33337 2.2 4.53337 1 6.00004 1C7.46671 1 8.66671 2.2 8.66671 3.66667V7.33333" stroke="#414141" stroke-miterlimit="10" stroke-linecap="square"></path>
+        </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

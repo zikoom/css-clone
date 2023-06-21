@@ -1,0 +1,142 @@
+@import './normalize.scss';
+@import './variable.scss';
+@import './mixins.scss';
+
+
+
+/*
+
+작은 -> 큰 해상도로 늘려가며 스타일 작업
+
+*/
+
+/*
+responsive
+
+header
+
+max 767px
+max 991 PC <> moible
+max 1200px pc - 양 옆 여백
+max 1280px pc - default
+*/
+
+
+body { background-color: coral; }
+
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.icon-logo {width: 48px; height: 48px;}
+
+
+@include mobile {
+  header {
+    padding: 14px 0;
+
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      padding: 0 24px;
+
+      .header-left-container {
+        display: flex; align-items: center; width: 100%;
+        .pc-icon-wrapper {display: none;}
+        .mobile-icon-wrapper {display: block;}
+      }
+
+      .header-middle-container{
+        .header-moible-middle-logo {display: block;}
+        .header-middle-wrapper {display: none;}
+      }
+
+
+      .header-right-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+
+        .header-right-button {
+          margin-left: 20px;
+          .icon-search {width: 21px; height: 21px;}
+          .icon-cart {width: 21px; height: 21px;}
+        }
+      }
+
+    }
+  }
+};
+
+@include pc {
+
+  header {
+
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    padding: 32px 0;
+    z-index: 1000;
+
+    padding: 32px 0;
+
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      max-width: 1920px;
+
+      padding: 0 50px;
+    }
+
+    .header-left-container {
+      display: flex; align-items: center; width: inherit; flex-grow: none;
+      .mobile-icon-wrapper {display: none;}
+      .pc-icon-wrapper{display: block; margin-right: 50px;}
+    }
+
+    .header-middle-container{
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      .header-moible-middle-logo {display: none;}
+      .header-middle-wrapper {
+        flex-grow: 1;
+        display: block;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-pc-nav-container {
+          .header-middle-button{
+            margin-left: 38px;
+          }
+        }
+      }
+    }
+
+    .header-right-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: inherit;
+
+      flex-grow: none;
+
+      .header-right-button {
+        margin-left: 20px;
+        .icon-search {width: 21px; height: 21px;}
+        .icon-cart {width: 21px; height: 21px;}
+      }
+    }
+  }
+
+}
+

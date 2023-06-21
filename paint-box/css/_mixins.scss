@@ -1,0 +1,26 @@
+/*
+
+responsive
+
+
+
+header
+
+max 767px
+max 967 PC <> moible
+max 1200px pc - 양 옆 여백
+max 1280px pc - default
+*/
+
+@mixin mobile {
+  @media (max-width: 991px) {
+    @content
+  }
+};
+
+
+@mixin pc {
+  @media (min-width: 992px) {
+    @content
+  }
+}
