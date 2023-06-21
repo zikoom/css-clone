@@ -477,8 +477,7 @@ header .mobile-toggle-menu-wrapper {
     width: 100%;
   }
   main .home-banner-section .image-box img {
-    width: 100%;
-    background-size: cover;
+    background-size: contain;
   }
   main .home-banner-section .image-box .image-box-content-box {
     margin: 0 auto;
@@ -651,6 +650,7 @@ header .mobile-toggle-menu-wrapper {
     text-transform: uppercase;
     border: 1px solid #fff;
     text-align: center;
+    font-weight: 600;
   }
 }
 
