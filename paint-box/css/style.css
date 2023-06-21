@@ -475,16 +475,50 @@ header .mobile-toggle-menu-wrapper {
   main .home-banner-section .image-box {
     position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   main .home-banner-section .image-box img {
-    background-size: contain;
+    width: 100%;
+    background-size: cover;
   }
   main .home-banner-section .image-box .image-box-content-box {
-    z-index: 500;
-    color: white;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 490px;
+    text-align: center;
+  }
+  main .home-banner-section .image-box .image-box-content-box .header {
+    font-size: 10px;
+    letter-spacing: 2.2px;
+    line-height: 14px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  main .home-banner-section .image-box .image-box-content-box .title {
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 34px;
+    font-weight: 300;
+    font-family: "freight-display-pro", "Times New Roman", serif;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  main .home-banner-section .image-box .image-box-content-box .button {
+    box-sizing: border-box;
+    color: #414141;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+    font-size: 10px;
+    height: 55px;
+    letter-spacing: 2.2px;
+    line-height: 55px;
+    max-width: 100%;
+    min-width: 240px;
+    padding: 0 50px;
+    text-transform: uppercase;
+    border: 1px solid #414141;
+    text-align: center;
   }
 }
 @media (min-width: 992px) {
@@ -558,6 +592,65 @@ header .mobile-toggle-menu-wrapper {
   header .header-right-container .header-right-button .icon-cart {
     width: 21px;
     height: 21px;
+  }
+  main {
+    margin-top: 116px;
+    padding-bottom: 20px;
+  }
+  main .home-banner-section {
+    width: 100%;
+  }
+  main .home-banner-section .image-box {
+    position: relative;
+    width: 100%;
+  }
+  main .home-banner-section .image-box img {
+    width: 100%;
+    background-size: cover;
+  }
+  main .home-banner-section .image-box .image-box-content-box {
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 490px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #fff;
+  }
+  main .home-banner-section .image-box .image-box-content-box .header {
+    font-size: 10px;
+    letter-spacing: 2.2px;
+    line-height: 14px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  main .home-banner-section .image-box .image-box-content-box .title {
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 34px;
+    font-weight: 300;
+    font-family: "freight-display-pro", "Times New Roman", serif;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  main .home-banner-section .image-box .image-box-content-box .button {
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+    font-size: 10px;
+    height: 55px;
+    letter-spacing: 2.2px;
+    line-height: 55px;
+    max-width: 100%;
+    min-width: 240px;
+    padding: 0 50px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    text-align: center;
   }
 }
 
