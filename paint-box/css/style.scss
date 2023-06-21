@@ -39,38 +39,64 @@ header {
 
 @include mobile {
 
-  .mobile-toggle-menu-wrapper {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  .mobile-toggle-set {
+    display: none;
 
-    top: 80px;
-    left: 0px;
-    z-index: 1000;
-
-
-    .mobile-toggle-menu-container{
-
-      max-width: 650px;
+    &.--open {display: block;}
+    .mobile-toggle-menu-wrapper {
+      display: block;
+      position: absolute;
+      width: 100%;
       height: 100%;
-      background-color: blue;
+
+      top: 80px;
+      left: 0px;
+      z-index: 1000;
+
+
+      .mobile-toggle-menu-container{
+
+        max-width: 650px;
+        height: 100%;
+        background-color: #fff;
+
+        padding: 20px 20px 80px 20px;
+
+        .mobile-toggle-menu-item {
+          padding: 20px 0;
+          border-bottom: .5px solid #D4D5DC;
+          font-size: 30px;
+          font-weight: 300;
+          cursor: pointer;
+        }
+
+        .book-button {
+          display: inline-block;
+          box-sizing: border-box;
+          width: 100%;
+          border: 1px solid black;
+          padding: 16px 32px;
+          text-align: center;
+        }
+      }
+
     }
-  }
 
-  .mobile-toggle-menu-overay {
-    width: 100%;
-    height: 100%;
+    .mobile-toggle-menu-overay {
+      width: 100%;
+      height: 100%;
 
-    position: absolute;
+      position: absolute;
 
-    background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
 
-    z-index: 100;
+      z-index: 100;
+    }
   }
 
   header {
     padding: 14px 0;
+    top: 0;
 
 
     .header-wrapper {
@@ -82,7 +108,12 @@ header {
       .header-left-container {
         display: flex; align-items: center; width: 100%;
         .pc-icon-wrapper {display: none;}
-        .mobile-icon-wrapper {display: block; cursor: pointer;}
+        .mobile-icon-wrapper {
+          display: block; cursor: pointer;
+
+          .icon-mobile-menu {display: block;}
+          .icon-mobile-menu-close {display: none;}
+        }
       }
 
       .header-middle-container{
@@ -106,11 +137,46 @@ header {
 
     }
   }
+
+  main {
+    margin-top: 80px;
+    padding-bottom: 20px;
+
+    .home-banner-section {
+      width: 100%;
+      .image-box {
+        position: relative;
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        img {
+          background-size: contain;
+
+        }
+
+        .image-box-content-box {
+          z-index: 500;
+          color: white
+        }
+      }
+    }
+  }
 };
 
 @include pc {
 
+  .mobile-toggle-set {
+    display: none;
+  }
+
   header {
+
+    top: 0;
+    left: 0;
 
     background-color: #fff;
     position: fixed;
@@ -175,6 +241,8 @@ header {
       }
     }
   }
+
+
 
 }
 

@@ -372,7 +372,13 @@ header .mobile-toggle-menu-wrapper {
 }
 
 @media (max-width: 991px) {
-  .mobile-toggle-menu-wrapper {
+  .mobile-toggle-set {
+    display: none;
+  }
+  .mobile-toggle-set.--open {
+    display: block;
+  }
+  .mobile-toggle-set .mobile-toggle-menu-wrapper {
     display: block;
     position: absolute;
     width: 100%;
@@ -381,12 +387,28 @@ header .mobile-toggle-menu-wrapper {
     left: 0px;
     z-index: 1000;
   }
-  .mobile-toggle-menu-wrapper .mobile-toggle-menu-container {
+  .mobile-toggle-set .mobile-toggle-menu-wrapper .mobile-toggle-menu-container {
     max-width: 650px;
     height: 100%;
-    background-color: blue;
+    background-color: #fff;
+    padding: 20px 20px 80px 20px;
   }
-  .mobile-toggle-menu-overay {
+  .mobile-toggle-set .mobile-toggle-menu-wrapper .mobile-toggle-menu-container .mobile-toggle-menu-item {
+    padding: 20px 0;
+    border-bottom: 0.5px solid #D4D5DC;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .mobile-toggle-set .mobile-toggle-menu-wrapper .mobile-toggle-menu-container .book-button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid black;
+    padding: 16px 32px;
+    text-align: center;
+  }
+  .mobile-toggle-set .mobile-toggle-menu-overay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -395,6 +417,7 @@ header .mobile-toggle-menu-wrapper {
   }
   header {
     padding: 14px 0;
+    top: 0;
   }
   header .header-wrapper {
     display: flex;
@@ -412,6 +435,12 @@ header .mobile-toggle-menu-wrapper {
   header .header-wrapper .header-left-container .mobile-icon-wrapper {
     display: block;
     cursor: pointer;
+  }
+  header .header-wrapper .header-left-container .mobile-icon-wrapper .icon-mobile-menu {
+    display: block;
+  }
+  header .header-wrapper .header-left-container .mobile-icon-wrapper .icon-mobile-menu-close {
+    display: none;
   }
   header .header-wrapper .header-middle-container .header-moible-middle-logo {
     display: block;
@@ -436,9 +465,35 @@ header .mobile-toggle-menu-wrapper {
     width: 21px;
     height: 21px;
   }
+  main {
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+  main .home-banner-section {
+    width: 100%;
+  }
+  main .home-banner-section .image-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .home-banner-section .image-box img {
+    background-size: contain;
+  }
+  main .home-banner-section .image-box .image-box-content-box {
+    z-index: 500;
+    color: white;
+  }
 }
 @media (min-width: 992px) {
+  .mobile-toggle-set {
+    display: none;
+  }
   header {
+    top: 0;
+    left: 0;
     background-color: #fff;
     position: fixed;
     width: 100%;
