@@ -352,10 +352,6 @@ max 991 PC <> moible
 max 1200px pc - 양 옆 여백
 max 1280px pc - default
 */
-body {
-  background-color: coral;
-}
-
 header {
   background-color: #fff;
   position: fixed;
@@ -369,6 +365,43 @@ header .mobile-toggle-menu-wrapper {
 .icon-logo {
   width: 48px;
   height: 48px;
+}
+
+.content-header {
+  font-size: 10px;
+  letter-spacing: 2.2px;
+  line-height: 14px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-title {
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 34px;
+  font-weight: 300;
+  font-family: "freight-display-pro", "Times New Roman", serif;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.button {
+  box-sizing: border-box;
+  color: #414141;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  height: 55px;
+  letter-spacing: 2.2px;
+  line-height: 55px;
+  max-width: 100%;
+  min-width: 240px;
+  padding: 0 50px;
+  text-transform: uppercase;
+  border: 1px solid #414141;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -477,7 +510,8 @@ header .mobile-toggle-menu-wrapper {
     width: 100%;
   }
   main .home-banner-section .image-box img {
-    background-size: contain;
+    background-size: cover;
+    width: 100vw;
   }
   main .home-banner-section .image-box .image-box-content-box {
     margin: 0 auto;
@@ -485,38 +519,24 @@ header .mobile-toggle-menu-wrapper {
     max-width: 490px;
     text-align: center;
   }
-  main .home-banner-section .image-box .image-box-content-box .header {
-    font-size: 10px;
-    letter-spacing: 2.2px;
-    line-height: 14px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    text-align: center;
+  main .main-container .sec-2 .sec-2-wrapper {
+    padding: 40px 0 80px 0;
   }
-  main .home-banner-section .image-box .image-box-content-box .title {
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 34px;
-    font-weight: 300;
-    font-family: "freight-display-pro", "Times New Roman", serif;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  main .home-banner-section .image-box .image-box-content-box .button {
-    box-sizing: border-box;
-    color: #414141;
-    cursor: pointer;
-    display: inline-block;
+  main .main-container .sec-2 .sec-2-wrapper .sec-2-mini-ittle {
     font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
     font-size: 10px;
-    height: 55px;
     letter-spacing: 2.2px;
-    line-height: 55px;
-    max-width: 100%;
-    min-width: 240px;
-    padding: 0 50px;
+    line-height: 15px;
+    margin-bottom: 17px;
     text-transform: uppercase;
-    border: 1px solid #414141;
+  }
+  main .main-container .sec-2 .sec-2-wrapper .sec-2-main-title {
+    font-family: "freight-display-pro", "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 38px;
+    margin-bottom: 32px;
+  }
+  main .main-container .sec-2 .sec-2-wrapper .add-button {
     text-align: center;
   }
 }
@@ -604,8 +624,10 @@ header .mobile-toggle-menu-wrapper {
     width: 100%;
   }
   main .home-banner-section .image-box img {
-    width: 100%;
+    width: 90vw;
+    display: block;
     background-size: cover;
+    margin: 0 auto;
   }
   main .home-banner-section .image-box .image-box-content-box {
     margin: 0 auto;
@@ -613,44 +635,10 @@ header .mobile-toggle-menu-wrapper {
     max-width: 490px;
     text-align: center;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
     color: #fff;
-  }
-  main .home-banner-section .image-box .image-box-content-box .header {
-    font-size: 10px;
-    letter-spacing: 2.2px;
-    line-height: 14px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  main .home-banner-section .image-box .image-box-content-box .title {
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 34px;
-    font-weight: 300;
-    font-family: "freight-display-pro", "Times New Roman", serif;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  main .home-banner-section .image-box .image-box-content-box .button {
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
-    font-size: 10px;
-    height: 55px;
-    letter-spacing: 2.2px;
-    line-height: 55px;
-    max-width: 100%;
-    min-width: 240px;
-    padding: 0 50px;
-    text-transform: uppercase;
-    border: 1px solid #fff;
-    text-align: center;
-    font-weight: 600;
   }
 }
 
