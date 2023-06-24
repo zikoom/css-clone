@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //constant variable
   funcLogger(setNavToggleEvent);
+  funcLogger(headerScrollEvent);
 
 })
 
@@ -70,4 +71,24 @@ function funcLogger (func) {
   } else {
     console.log('funcLogger: func is not instance of Function. param: ', func);
   }
+}
+
+
+function headerScrollEvent () {
+  const header = document.getElementById('header');
+  console.log('header: ', header);
+
+  if(!isElement(header)){
+    console.log('get header fail. header: ', header);
+    return;
+  }
+
+  window.addEventListener('scroll', (e) => {
+    console.log(e.target);
+    if(window.scrollY === 0) {
+      header.classList.remove('box-shadow')
+    } else {
+      header.classList.add('box-shadow');
+    }
+  })
 }
