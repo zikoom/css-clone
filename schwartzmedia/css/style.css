@@ -329,7 +329,7 @@ html {
 }
 
 @media (max-width: 700px) {
-  .toggle-rapper {
+  .toggle-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -337,8 +337,8 @@ html {
     z-index: 10;
     overflow-x: hidden;
   }
-  .toggle-rapper .hamburger-checker {
-    position: absolute;
+  .toggle-wrapper .hamburger-checker {
+    position: fixed;
     display: block;
     height: 32px;
     width: 32px;
@@ -348,23 +348,23 @@ html {
     opacity: 0;
     cursor: pointer;
   }
-  .toggle-rapper .hamburger-checker:checked ~ .hamburger-container .line {
+  .toggle-wrapper .hamburger-checker:checked ~ .hamburger-container .line {
     background-color: rgb(225, 160, 40);
   }
-  .toggle-rapper .hamburger-checker:checked ~ .hamburger-container .line1 {
+  .toggle-wrapper .hamburger-checker:checked ~ .hamburger-container .line1 {
     transform: rotate(45deg);
   }
-  .toggle-rapper .hamburger-checker:checked ~ .hamburger-container .line2 {
+  .toggle-wrapper .hamburger-checker:checked ~ .hamburger-container .line2 {
     transform: scaleY(0);
   }
-  .toggle-rapper .hamburger-checker:checked ~ .hamburger-container .line3 {
+  .toggle-wrapper .hamburger-checker:checked ~ .hamburger-container .line3 {
     transform: rotate(-45deg);
   }
-  .toggle-rapper .hamburger-container {
+  .toggle-wrapper .hamburger-container {
     display: block;
     height: 26px;
     width: 32px;
-    position: absolute;
+    position: fixed;
     top: 17px;
     left: 20px;
     z-index: 2;
@@ -372,21 +372,21 @@ html {
     flex-direction: column;
     justify-content: space-between;
   }
-  .toggle-rapper .hamburger-container .line {
+  .toggle-wrapper .hamburger-container .line {
     display: block;
     height: 4px;
     width: 100%;
     border-radius: 10px;
     background: #0e2431;
   }
-  .toggle-rapper .hamburger-container .line.line1 {
+  .toggle-wrapper .hamburger-container .line.line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
   }
-  .toggle-rapper .hamburger-container .line.line2 {
+  .toggle-wrapper .hamburger-container .line.line2 {
     transition: transform 0.2s ease-in-out;
   }
-  .toggle-rapper .hamburger-container .line.line3 {
+  .toggle-wrapper .hamburger-container .line.line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
@@ -409,6 +409,21 @@ html {
   header .header-wrapper .text {
     font-size: 2rem;
     font-weight: 600;
+  }
+  .nav-container {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transition: left 0.5s;
+    left: -100vh;
+  }
+  .nav-container.--open {
+    left: 0;
+  }
+  .page-container {
+    width: 100vw;
+    height: 500px;
   }
 }
 

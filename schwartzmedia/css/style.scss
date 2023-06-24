@@ -10,7 +10,7 @@ html {
 
 @include mobile {
 
-  .toggle-rapper {
+  .toggle-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@ html {
     z-index: 10;
     overflow-x: hidden;
     .hamburger-checker {
-      position: absolute;
+      position: fixed;
       display: block;
       height: 32px;
       width: 32px;
@@ -48,7 +48,7 @@ html {
       display: block;
       height: 26px;
       width: 32px;
-      position: absolute;
+      position: fixed;
       top: 17px;
       left: 20px;
       z-index: 2;
@@ -99,5 +99,23 @@ html {
         font-weight: 600;
       }
     }
+  }
+
+  .nav-container {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    
+    transition: left 0.5s;
+    left: -100vh;
+
+    &.--open {
+      left: 0
+    }
+  }
+  .page-container {
+    width: 100vw;
+    height: 500px;
   }
 }
