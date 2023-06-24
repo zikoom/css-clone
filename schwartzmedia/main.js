@@ -1,5 +1,10 @@
+
+//constant value
+
 const _OpenClassName = '--open';
 
+
+//이벤트 부착 코드
 window.addEventListener('DOMContentLoaded', () => {
   console.log('dom content loaded');
 
@@ -19,17 +24,19 @@ window.addEventListener('DOMContentLoaded', () => {
 function setNavToggleEvent() {
   const navToggleButton = document.getElementById('toggle-wrapper')
   const navContainerTag = document.getElementById('nav-container');
-
+  const overayTag = document.getElementById('overay');
 
   // nav menu 이벤트
-  if(isElement(navToggleButton) && isElement(navContainerTag)){
+  if(isElement(navToggleButton) && isElement(navContainerTag) && isElement(overayTag)){
     navToggleButton.addEventListener('click', () => {
       const classList = navContainerTag.classList;
-
+      // overayTag
       if(classList.contains(_OpenClassName)){
         classList.remove(_OpenClassName)
+        overayTag.classList.remove(_OpenClassName)
       } else {
         classList.add(_OpenClassName);
+        overayTag.classList.add(_OpenClassName)
       }
     })
   } else {
