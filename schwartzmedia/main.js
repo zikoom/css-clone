@@ -84,7 +84,6 @@ function headerScrollEvent () {
   }
 
   window.addEventListener('scroll', (e) => {
-    console.log(e.target);
     if(window.scrollY === 0) {
       header.classList.remove('box-shadow')
     } else {
