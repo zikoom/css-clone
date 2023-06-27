@@ -537,9 +537,31 @@ html {
   }
   .page-wrpaper .intro-wrapper .intro-footer {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     font-size: 34px;
     font-weight: 500;
+  }
+  .page-wrpaper .about-text-wrapper {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 5rem;
+  }
+  .page-wrpaper .about-text-wrapper .text {
+    text-indent: 8em;
+    display: inline;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 1.5em;
+  }
+  .page-wrpaper .about-text-wrapper .text:before {
+    content: "About";
+    padding-right: 3em;
+    letter-spacing: 0;
+    font-family: "GTAmerica-Medium", Helvetica, Arial, serif;
+  }
+  .page-wrpaper .about-text-wrapper .view-more-info-button {
+    display: block;
+    margin-top: 1em;
   }
 }
 @media (min-width: 701px) {

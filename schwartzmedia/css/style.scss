@@ -249,9 +249,34 @@ html {
       }
       .intro-footer {
         position: absolute;
-        bottom: 0;
+        bottom: 30px;
         font-size: 34px;
         font-weight: 500;
+      }
+    }
+
+    .about-text-wrapper {
+      line-height: 1.5em;
+      margin-bottom: 1em;
+      margin-top: 5rem;
+      .text {
+        text-indent: 8em;
+        display: inline;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 1.5em;
+
+        &:before {
+          content: "About";
+          padding-right: 3em;
+          letter-spacing: 0;
+          font-family: "GTAmerica-Medium", Helvetica, Arial, serif;
+        }
+      }
+
+      .view-more-info-button {
+        display: block;
+        margin-top: 1em;
       }
     }
   }
