@@ -2,6 +2,7 @@
 //constant value
 
 const _OpenClassName = '--open';
+const _ScrolledClassName = '--scrolled'
 
 
 //이벤트 부착 코드
@@ -49,17 +50,17 @@ function setNavToggleEvent() {
 
 
 /**
- * 
+ *
  * @param {HTMLElement} HTMLElement
  * @returns {boolean}
  */
 function isElement(element) {
-  return element instanceof Element || element instanceof HTMLDocument;  
+  return element instanceof Element || element instanceof HTMLDocument;
 }
 
 /**
- * 
- * @param {function} Function 
+ *
+ * @param {function} Function
  */
 function funcLogger (func) {
   if( func instanceof Function) {
@@ -78,16 +79,25 @@ function headerScrollEvent () {
   const header = document.getElementById('header');
   console.log('header: ', header);
 
+
   if(!isElement(header)){
     console.log('get header fail. header: ', header);
     return;
   }
 
+  //header의 자식 div. 전체 내용 래핑 태그
+  const headerWrapper = header.querySelector('.header-wrapper');
+  console.log('headerWrapper: ', headerWrapper);
+
+  //box-shadow
+
   window.addEventListener('scroll', (e) => {
     if(window.scrollY === 0) {
       header.classList.remove('box-shadow')
+      headerWrapper.classList.remove(_ScrolledClassName)
     } else {
       header.classList.add('box-shadow');
+      headerWrapper.classList.add(_ScrolledClassName)
     }
   })
 }
