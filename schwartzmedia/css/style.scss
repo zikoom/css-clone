@@ -11,11 +11,29 @@ html {
 
 //common style
 
-//div 아래 밑줄
-.content-box-border-top{
-  border-top: 1px solid #dadada;
-}
+.rount-button-shape {
+  border: 1px solid #dadada;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  font-family: "GTAmerica-Medium", Helvetica, Arial, serif;
+  margin: 5px 5px 0 0;
+  margin-right: 5px;
+  cursor: pointer;
+  min-width: 144px;
+  text-align: center;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  }
 
+.rount-button-shape:hover {
+  border: 1px solid #dadada;
+  background: black;
+  color: white;
+}
 
 /////
 
@@ -277,6 +295,31 @@ html {
       .view-more-info-button {
         display: block;
         margin-top: 1em;
+      }
+    }
+
+    .story-board {
+      .story {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #dadada;
+
+        padding: 20px 0;
+
+        .row-image {
+          width: 100%;
+          padding: 16px 0;
+          img {
+            width: 100%;
+            background-image: cover;
+          }
+        }
+
+        .story-info {
+          padding: 16px 0;
+          .story-title {font-size: 16px; font-weight: 600;}
+          .story-content {font-size: 16px}
+        }
       }
     }
   }

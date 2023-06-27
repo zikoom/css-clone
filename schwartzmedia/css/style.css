@@ -332,8 +332,28 @@ html {
   height: 150vh;
 }
 
-.content-box-border-top {
-  border-top: 1px solid #dadada;
+.rount-button-shape {
+  border: 1px solid #dadada;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  font-family: "GTAmerica-Medium", Helvetica, Arial, serif;
+  margin: 5px 5px 0 0;
+  margin-right: 5px;
+  cursor: pointer;
+  min-width: 144px;
+  text-align: center;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.rount-button-shape:hover {
+  border: 1px solid #dadada;
+  background: black;
+  color: white;
 }
 
 #overay {
@@ -562,6 +582,30 @@ html {
   .page-wrpaper .about-text-wrapper .view-more-info-button {
     display: block;
     margin-top: 1em;
+  }
+  .page-wrpaper .story-board .story {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #dadada;
+    padding: 20px 0;
+  }
+  .page-wrpaper .story-board .story .row-image {
+    width: 100%;
+    padding: 16px 0;
+  }
+  .page-wrpaper .story-board .story .row-image img {
+    width: 100%;
+    background-image: cover;
+  }
+  .page-wrpaper .story-board .story .story-info {
+    padding: 16px 0;
+  }
+  .page-wrpaper .story-board .story .story-info .story-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .page-wrpaper .story-board .story .story-info .story-content {
+    font-size: 16px;
   }
 }
 @media (min-width: 701px) {
