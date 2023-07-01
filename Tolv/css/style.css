@@ -327,16 +327,17 @@ a:hover, a:active {
   background-color: #f59000;
 }
 
-html {
-  height: 200vh;
-}
-
 .align-center {
   align-items: center;
 }
 
 .box-shadow {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+h2, h3, h6 {
+  margin: 0;
+  margin-bottom: 0.3em;
 }
 
 header {
@@ -390,8 +391,60 @@ main .main-wrapper .flex-container {
 main .main-wrapper .flex-container .flex-half-container {
   width: 50%;
 }
+main .main-wrapper .flex-container .flex-half-container.left .full-image-container {
+  height: 100vh;
+  background-size: cover;
+}
+main .main-wrapper .flex-container .flex-half-container.left .full-image-container:nth-child(1) {
+  background-image: url("https://tolv.dk/wp-content/uploads/2020/11/home_kitsune-2-1040x1300.jpg");
+}
+main .main-wrapper .flex-container .flex-half-container.left .full-image-container:nth-child(2) {
+  background-image: url("https://tolv.dk/wp-content/uploads/2020/11/home_portobelloW_arm-1040x1300.jpg");
+}
+main .main-wrapper .flex-container .flex-half-container.left .full-image-container:nth-child(3) {
+  background-image: url("https://tolv.dk/wp-content/uploads/2020/11/home_copal-1040x1300.jpg");
+}
+main .main-wrapper .flex-container .flex-half-container.left .full-image-container:nth-child(4) {
+  background-image: url("https://tolv.dk/wp-content/uploads/2020/11/home_figura_2-1040x1300.jpg");
+}
+main .main-wrapper .flex-container .flex-half-container.left .full-image-container:nth-child(5) {
+  background-image: url("https://tolv.dk/wp-content/uploads/2020/11/home_neuf_daybed-1040x1300.jpg");
+}
 main .main-wrapper .flex-container .flex-half-container.right {
-  background-color: #eae9e5;
+  background-color: #fff;
+}
+main .main-wrapper .flex-container .flex-half-container.right .full-dsecription-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+main .main-wrapper .flex-container .flex-half-container.right .full-dsecription-container .text-wrap {
+  margin: auto 0;
+  width: 100%;
+  padding: 0 6vw;
+  font-size: 1.85rem;
+  text-align: center;
+}
+main .main-wrapper .flex-container .flex-half-container.right .full-dsecription-container .text-wrap h2 {
+  margin-top: 0;
+  margin-bottom: 0.7em;
+}
+main .main-wrapper .time-for-living {
+  background-color: #efcb56;
+  padding: 110px 18.52499025vw 85px 18.52499025vw;
+}
+main .main-wrapper .time-for-living .container {
+  text-align: center;
+}
+main .main-wrapper .time-for-living .container h2 {
+  font-size: calc(0.5714285714vw + 33.8285714286px);
+  line-height: 1.25em;
+}
+main .main-wrapper .time-for-living .container h3 {
+  font-size: calc(0.5714285714vw + 19.8285714286px);
+  font-weight: 400;
+  line-height: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 /*# sourceMappingURL=style.css.map */
