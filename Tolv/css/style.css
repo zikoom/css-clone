@@ -446,5 +446,62 @@ main .main-wrapper .time-for-living .container h3 {
   line-height: 1.25em;
   margin-bottom: 1.25em;
 }
+main .main-wrapper .grid-container {
+  display: grid;
+  gap: 2px;
+  background-color: white;
+  width: 100%;
+  grid-template-areas: "grid-item-1 grid-item-1 grid-item-2 grid-item-3" "grid-item-4 grid-item-5 grid-item-5 grid-item-6" "grid-item-7 grid-item-7 grid-item-8 grid-item-9" "grid-item-10 grid-item-10 grid-item-11 grid-item-11";
+}
+main .main-wrapper .grid-container .grid-item {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .main-wrapper .grid-container .grid-item-1 {
+  grid-area: grid-item-1;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Cherry-Sofa-Lookbook-3-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-2 {
+  grid-area: grid-item-2;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-3 {
+  grid-area: grid-item-3;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-4 {
+  grid-area: grid-item-4;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-5 {
+  grid-area: grid-item-5;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-6 {
+  grid-area: grid-item-6;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-7 {
+  grid-area: grid-item-7;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-8 {
+  grid-area: grid-item-8;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-9 {
+  grid-area: grid-item-9;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-10 {
+  grid-area: grid-item-10;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
+main .main-wrapper .grid-container .grid-item-11 {
+  grid-area: grid-item-11;
+  background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+}
 
 /*# sourceMappingURL=style.css.map */
